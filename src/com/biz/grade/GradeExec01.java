@@ -6,17 +6,17 @@ public class GradeExec01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// 패키지 밑에 txt파일을 넣고, 오른쪽클릭해서 -> copy Qualifed name 누르고 -> 변수선언하고 넣어.
+		// 패키지 밑에 txt파일을 넣고, 오른쪽클릭해서 -> copy Qualifed name 누르고 -> 
+		//변수선언하고 넣어.
 		// 앞에 지우고 src부터만 넣어 (가끔 오류나서)
 		String nameFile = "src/com/biz/grade/영어이름들.txt";
 
 		FileReader fr;
-		// fd = new FileReader(nameFile); 트라이캐치
+		// fr = new FileReader(nameFile); 트라이캐치
 		try {
 			fr = new FileReader(nameFile);
 			while (true) {
 				// 파일 내용을 읽되
-
 				int intRead = fr.read();
 				// EOF 신호가 오면 그만 읽기
 				if (intRead < 0)
